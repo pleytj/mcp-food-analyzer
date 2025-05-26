@@ -5,16 +5,16 @@ class Ingredient(BaseModel):
     id: str
 
 class Nutrition(BaseModel):
-    energy_kcal: Optional[float]
-    energy_kj: Optional[float]
-    fat: Optional[float]
-    saturated_fat: Optional[float]
-    carbohydrates: Optional[float]
-    sugars: Optional[float]
-    fiber: Optional[float]
-    proteins: Optional[float]
-    salt: Optional[float]
-    sodium: Optional[float]
+    energy_kcal: Optional[float] = None
+    energy_kj: Optional[float] = None
+    fat: Optional[float] = None
+    saturated_fat: Optional[float] = None
+    carbohydrates: Optional[float] = None
+    sugars: Optional[float] = None
+    fiber: Optional[float] = None
+    proteins: Optional[float] = None
+    salt: Optional[float] = None
+    sodium: Optional[float] = None
 
 class UserProfile(BaseModel):
     allergies: List[str]
